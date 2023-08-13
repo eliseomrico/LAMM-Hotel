@@ -139,6 +139,19 @@
     <Compile Include="reservation_forms\reservation_search_form.Designer.cs">
       <DependentUpon>reservation_search_form.cs</DependentUpon>
     </Compile>
+    <Compile Include="room_availability_forms\room_search_form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="room_availability_forms\room_search_form.designer.cs">
+      <DependentUpon>room_search_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="room_availability_forms\room_edit_info_form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="room_availability_forms\room_edit_info_form.designer.cs">
+      <DependentUpon>room_edit_info_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="room_availability_forms\Room_Obj.cs" />
     <Compile Include="transactions_forms\transactions_form.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -198,6 +211,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="reservation_forms\reservation_search_form.resx">
       <DependentUpon>reservation_search_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="room_availability_forms\room_search_form.resx">
+      <DependentUpon>room_search_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="room_availability_forms\room_edit_info_form.resx">
+      <DependentUpon>room_edit_info_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="transactions_forms\transactions_form.resx">
       <DependentUpon>transactions_form.cs</DependentUpon>
