@@ -17,10 +17,12 @@ namespace LAMM_PMS
 
         private main_menu topMenu;
 
-        public guest_add_form(main_menu topMenu)
+        public guest_add_form(main_menu topMenu, int new_guest_id)
         {
             this.topMenu = topMenu;
+
             InitializeComponent();
+            guest_add_form_textbox_guest_id.Text = new_guest_id.ToString();
         }
 
         private void guest_add_form_Load(object sender, EventArgs e)

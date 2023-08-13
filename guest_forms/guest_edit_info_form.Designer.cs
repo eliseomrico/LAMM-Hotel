@@ -80,7 +80,7 @@
             // 
             this.guest_edit_info_form_textbox_account_balance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_textbox_account_balance.Location = new System.Drawing.Point(1108, 415);
-            this.guest_edit_info_form_textbox_account_balance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_textbox_account_balance.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_textbox_account_balance.Name = "guest_edit_info_form_textbox_account_balance";
             this.guest_edit_info_form_textbox_account_balance.ReadOnly = true;
             this.guest_edit_info_form_textbox_account_balance.Size = new System.Drawing.Size(338, 39);
@@ -90,17 +90,18 @@
             // 
             this.guest_edit_info_form_textbox_credit_card_field1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_textbox_credit_card_field1.Location = new System.Drawing.Point(582, 415);
-            this.guest_edit_info_form_textbox_credit_card_field1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_textbox_credit_card_field1.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_textbox_credit_card_field1.Name = "guest_edit_info_form_textbox_credit_card_field1";
             this.guest_edit_info_form_textbox_credit_card_field1.ReadOnly = true;
             this.guest_edit_info_form_textbox_credit_card_field1.Size = new System.Drawing.Size(68, 39);
             this.guest_edit_info_form_textbox_credit_card_field1.TabIndex = 5;
+            this.guest_edit_info_form_textbox_credit_card_field1.TextChanged += new System.EventHandler(this.guest_edit_info_form_textbox_credit_card_field1_TextChanged);
             // 
             // guest_edit_info_form_textbox_phone_number
             // 
             this.guest_edit_info_form_textbox_phone_number.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_textbox_phone_number.Location = new System.Drawing.Point(102, 415);
-            this.guest_edit_info_form_textbox_phone_number.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_textbox_phone_number.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_textbox_phone_number.Name = "guest_edit_info_form_textbox_phone_number";
             this.guest_edit_info_form_textbox_phone_number.ReadOnly = true;
             this.guest_edit_info_form_textbox_phone_number.Size = new System.Drawing.Size(338, 39);
@@ -110,7 +111,7 @@
             // 
             this.guest_edit_info_form_textbox_last_name.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_textbox_last_name.Location = new System.Drawing.Point(1108, 240);
-            this.guest_edit_info_form_textbox_last_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_textbox_last_name.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_textbox_last_name.Name = "guest_edit_info_form_textbox_last_name";
             this.guest_edit_info_form_textbox_last_name.ReadOnly = true;
             this.guest_edit_info_form_textbox_last_name.Size = new System.Drawing.Size(338, 39);
@@ -120,7 +121,7 @@
             // 
             this.guest_edit_info_form_textbox_first_name.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_textbox_first_name.Location = new System.Drawing.Point(604, 238);
-            this.guest_edit_info_form_textbox_first_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_textbox_first_name.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_textbox_first_name.Name = "guest_edit_info_form_textbox_first_name";
             this.guest_edit_info_form_textbox_first_name.ReadOnly = true;
             this.guest_edit_info_form_textbox_first_name.Size = new System.Drawing.Size(338, 39);
@@ -210,7 +211,7 @@
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_btn_cancel);
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_btn_save_info);
             this.guest_edit_info_form_panel_main.Location = new System.Drawing.Point(0, 0);
-            this.guest_edit_info_form_panel_main.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_panel_main.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_panel_main.MinimumSize = new System.Drawing.Size(1592, 1175);
             this.guest_edit_info_form_panel_main.Name = "guest_edit_info_form_panel_main";
             this.guest_edit_info_form_panel_main.Size = new System.Drawing.Size(1592, 1175);
@@ -220,7 +221,7 @@
             // 
             this.guest_edit_info_form_textbox_guest_id.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_textbox_guest_id.Location = new System.Drawing.Point(102, 238);
-            this.guest_edit_info_form_textbox_guest_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_textbox_guest_id.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_textbox_guest_id.Name = "guest_edit_info_form_textbox_guest_id";
             this.guest_edit_info_form_textbox_guest_id.ReadOnly = true;
             this.guest_edit_info_form_textbox_guest_id.Size = new System.Drawing.Size(338, 39);
@@ -230,31 +231,34 @@
             // 
             this.guest_edit_info_form_textbox_credit_card_field4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_textbox_credit_card_field4.Location = new System.Drawing.Point(892, 415);
-            this.guest_edit_info_form_textbox_credit_card_field4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_textbox_credit_card_field4.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_textbox_credit_card_field4.Name = "guest_edit_info_form_textbox_credit_card_field4";
             this.guest_edit_info_form_textbox_credit_card_field4.ReadOnly = true;
             this.guest_edit_info_form_textbox_credit_card_field4.Size = new System.Drawing.Size(68, 39);
             this.guest_edit_info_form_textbox_credit_card_field4.TabIndex = 8;
+            this.guest_edit_info_form_textbox_credit_card_field4.TextChanged += new System.EventHandler(this.guest_edit_info_form_textbox_credit_card_field4_TextChanged);
             // 
             // guest_edit_info_form_textbox_credit_card_field3
             // 
             this.guest_edit_info_form_textbox_credit_card_field3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_textbox_credit_card_field3.Location = new System.Drawing.Point(790, 415);
-            this.guest_edit_info_form_textbox_credit_card_field3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_textbox_credit_card_field3.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_textbox_credit_card_field3.Name = "guest_edit_info_form_textbox_credit_card_field3";
             this.guest_edit_info_form_textbox_credit_card_field3.ReadOnly = true;
             this.guest_edit_info_form_textbox_credit_card_field3.Size = new System.Drawing.Size(68, 39);
             this.guest_edit_info_form_textbox_credit_card_field3.TabIndex = 7;
+            this.guest_edit_info_form_textbox_credit_card_field3.TextChanged += new System.EventHandler(this.guest_edit_info_form_textbox_credit_card_field3_TextChanged);
             // 
             // guest_edit_info_form_textbox_credit_card_field2
             // 
             this.guest_edit_info_form_textbox_credit_card_field2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_textbox_credit_card_field2.Location = new System.Drawing.Point(684, 415);
-            this.guest_edit_info_form_textbox_credit_card_field2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_textbox_credit_card_field2.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_textbox_credit_card_field2.Name = "guest_edit_info_form_textbox_credit_card_field2";
             this.guest_edit_info_form_textbox_credit_card_field2.ReadOnly = true;
             this.guest_edit_info_form_textbox_credit_card_field2.Size = new System.Drawing.Size(68, 39);
             this.guest_edit_info_form_textbox_credit_card_field2.TabIndex = 6;
+            this.guest_edit_info_form_textbox_credit_card_field2.TextChanged += new System.EventHandler(this.guest_edit_info_form_textbox_credit_card_field2_TextChanged);
             // 
             // guest_edit_info_form_btn_edit
             // 
@@ -264,12 +268,13 @@
             this.guest_edit_info_form_btn_edit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_btn_edit.ForeColor = System.Drawing.Color.White;
             this.guest_edit_info_form_btn_edit.Location = new System.Drawing.Point(648, 760);
-            this.guest_edit_info_form_btn_edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_btn_edit.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_btn_edit.Name = "guest_edit_info_form_btn_edit";
             this.guest_edit_info_form_btn_edit.Size = new System.Drawing.Size(344, 69);
             this.guest_edit_info_form_btn_edit.TabIndex = 37;
             this.guest_edit_info_form_btn_edit.Text = "Edit Info";
             this.guest_edit_info_form_btn_edit.UseVisualStyleBackColor = false;
+            this.guest_edit_info_form_btn_edit.Click += new System.EventHandler(this.guest_edit_info_form_btn_edit_Click);
             // 
             // guest_edit_info_form_btn_delete
             // 
@@ -279,7 +284,7 @@
             this.guest_edit_info_form_btn_delete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_btn_delete.ForeColor = System.Drawing.Color.White;
             this.guest_edit_info_form_btn_delete.Location = new System.Drawing.Point(982, 760);
-            this.guest_edit_info_form_btn_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_btn_delete.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_btn_delete.Name = "guest_edit_info_form_btn_delete";
             this.guest_edit_info_form_btn_delete.Size = new System.Drawing.Size(230, 69);
             this.guest_edit_info_form_btn_delete.TabIndex = 35;
@@ -294,12 +299,13 @@
             this.guest_edit_info_form_btn_cancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_btn_cancel.ForeColor = System.Drawing.Color.White;
             this.guest_edit_info_form_btn_cancel.Location = new System.Drawing.Point(310, 760);
-            this.guest_edit_info_form_btn_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_btn_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_btn_cancel.Name = "guest_edit_info_form_btn_cancel";
             this.guest_edit_info_form_btn_cancel.Size = new System.Drawing.Size(344, 69);
             this.guest_edit_info_form_btn_cancel.TabIndex = 39;
             this.guest_edit_info_form_btn_cancel.Text = "Cancel";
             this.guest_edit_info_form_btn_cancel.UseVisualStyleBackColor = false;
+            this.guest_edit_info_form_btn_cancel.Click += new System.EventHandler(this.guest_edit_info_form_btn_cancel_Click);
             // 
             // guest_edit_info_form_btn_save_info
             // 
@@ -310,7 +316,7 @@
             this.guest_edit_info_form_btn_save_info.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guest_edit_info_form_btn_save_info.ForeColor = System.Drawing.Color.White;
             this.guest_edit_info_form_btn_save_info.Location = new System.Drawing.Point(648, 760);
-            this.guest_edit_info_form_btn_save_info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guest_edit_info_form_btn_save_info.Margin = new System.Windows.Forms.Padding(4);
             this.guest_edit_info_form_btn_save_info.Name = "guest_edit_info_form_btn_save_info";
             this.guest_edit_info_form_btn_save_info.Size = new System.Drawing.Size(344, 69);
             this.guest_edit_info_form_btn_save_info.TabIndex = 38;
@@ -323,7 +329,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guest_edit_info_form_panel_main);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(1592, 1175);
             this.Name = "guest_edit_info_form";
             this.Size = new System.Drawing.Size(1592, 1175);
