@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -70,6 +72,62 @@ namespace LAMM_PMS
             }
         }
 
+        private void guest_add_form_btn_add_guest_Click(object sender, EventArgs e)
+        {
+            string guest_first_name = guest_add_form_textbox_first_name.Text;
+            string guest_last_name = guest_add_form_textbox_last_name.Text;
+            string guest_phone_number = guest_add_form_textbox_phone_number.Text;
+            int guest_account_balance = Int32.Parse(guest_add_form_textbox_account_balance.Text);
+            string guest_credit_card_no = guest_add_form_textbox_credit_card_field1.Text +
+                                          guest_add_form_textbox_credit_card_field2.Text +
+                                          guest_add_form_textbox_credit_card_field3.Text +
+                                          guest_add_form_textbox_credit_card_field4.Text;
+
+
+            string connectionString = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
+
+            using (NpgsqlConnection connection = new NpgsqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    string insertQuery = "INSERT INTO CUSTOMER (cust_fname, cust_lname, cust_phone, cust_balance, cust_credit_card_no) VALUES (@first_name, @last_name,@phone_number,@account_balance,@credit_card_number)";
+                    using (NpgsqlCommand command = new NpgsqlCommand(insertQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@first_name", guest_first_name);
+                        command.Parameters.AddWithValue("@last_name", guest_last_name);
+                        command.Parameters.AddWithValue("@phone_number", guest_phone_number);
+                        command.Parameters.AddWithValue("@account_balance", guest_account_balance);
+                        command.Parameters.AddWithValue("@credit_card_number", guest_credit_card_no);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Data inserted successfully.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("No rows were affected.");
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+
+                Panel parent = (Panel)Parent;
+                parent.Controls.Clear();
+                parent.Controls.Add(new guest_search_form(topMenu));
+
+            }
+
+        }
+       
+        
+        
         /*
         // Credit Card Auto-Tab Fields
         private void textBox_cc_part1_TextChanged(object sender, EventArgs e)

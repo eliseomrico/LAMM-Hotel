@@ -279,6 +279,7 @@
             this.guest_add_form_btn_add_guest.TabIndex = 38;
             this.guest_add_form_btn_add_guest.Text = "Add Guest";
             this.guest_add_form_btn_add_guest.UseVisualStyleBackColor = false;
+            this.guest_add_form_btn_add_guest.Click += new System.EventHandler(this.guest_add_form_btn_add_guest_Click);
             // 
             // guest_add_form
             // 
