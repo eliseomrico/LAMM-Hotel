@@ -310,7 +310,6 @@
             // guest_edit_info_form_btn_save_info
             // 
             this.guest_edit_info_form_btn_save_info.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
-            this.guest_edit_info_form_btn_save_info.Enabled = false;
             this.guest_edit_info_form_btn_save_info.FlatAppearance.BorderSize = 0;
             this.guest_edit_info_form_btn_save_info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.guest_edit_info_form_btn_save_info.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -322,7 +321,7 @@
             this.guest_edit_info_form_btn_save_info.TabIndex = 38;
             this.guest_edit_info_form_btn_save_info.Text = "Save info";
             this.guest_edit_info_form_btn_save_info.UseVisualStyleBackColor = false;
-            this.guest_edit_info_form_btn_save_info.Visible = false;
+            this.guest_edit_info_form_btn_save_info.Click += new System.EventHandler(this.guest_edit_info_form_btn_save_info_Click);
             // 
             // guest_edit_info_form
             // 
