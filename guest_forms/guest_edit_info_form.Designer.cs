@@ -49,6 +49,7 @@
             this.guest_edit_info_form_btn_delete = new System.Windows.Forms.Button();
             this.guest_edit_info_form_btn_cancel = new System.Windows.Forms.Button();
             this.guest_edit_info_form_btn_save_info = new System.Windows.Forms.Button();
+            this.guest_edit_info_form_btn_done = new System.Windows.Forms.Button();
             this.guest_edit_info_form_panel_main.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -194,7 +195,6 @@
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_textbox_credit_card_field4);
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_textbox_credit_card_field3);
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_textbox_credit_card_field2);
-            this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_btn_edit);
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_btn_delete);
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_label_title);
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_textbox_account_balance);
@@ -209,6 +209,8 @@
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_label_last_name);
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_label_phone_number);
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_btn_cancel);
+            this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_btn_done);
+            this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_btn_edit);
             this.guest_edit_info_form_panel_main.Controls.Add(this.guest_edit_info_form_btn_save_info);
             this.guest_edit_info_form_panel_main.Location = new System.Drawing.Point(0, 0);
             this.guest_edit_info_form_panel_main.Margin = new System.Windows.Forms.Padding(4);
@@ -290,6 +292,7 @@
             this.guest_edit_info_form_btn_delete.TabIndex = 35;
             this.guest_edit_info_form_btn_delete.Text = "Delete";
             this.guest_edit_info_form_btn_delete.UseVisualStyleBackColor = false;
+            this.guest_edit_info_form_btn_delete.Click += new System.EventHandler(this.guest_edit_info_form_btn_delete_Click);
             // 
             // guest_edit_info_form_btn_cancel
             // 
@@ -305,6 +308,7 @@
             this.guest_edit_info_form_btn_cancel.TabIndex = 39;
             this.guest_edit_info_form_btn_cancel.Text = "Cancel";
             this.guest_edit_info_form_btn_cancel.UseVisualStyleBackColor = false;
+            this.guest_edit_info_form_btn_cancel.Visible = false;
             this.guest_edit_info_form_btn_cancel.Click += new System.EventHandler(this.guest_edit_info_form_btn_cancel_Click);
             // 
             // guest_edit_info_form_btn_save_info
@@ -322,6 +326,22 @@
             this.guest_edit_info_form_btn_save_info.Text = "Save info";
             this.guest_edit_info_form_btn_save_info.UseVisualStyleBackColor = false;
             this.guest_edit_info_form_btn_save_info.Click += new System.EventHandler(this.guest_edit_info_form_btn_save_info_Click);
+            // 
+            // guest_edit_info_form_btn_done
+            // 
+            this.guest_edit_info_form_btn_done.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(78)))), ((int)(((byte)(79)))));
+            this.guest_edit_info_form_btn_done.FlatAppearance.BorderSize = 0;
+            this.guest_edit_info_form_btn_done.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.guest_edit_info_form_btn_done.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guest_edit_info_form_btn_done.ForeColor = System.Drawing.Color.White;
+            this.guest_edit_info_form_btn_done.Location = new System.Drawing.Point(310, 760);
+            this.guest_edit_info_form_btn_done.Margin = new System.Windows.Forms.Padding(4);
+            this.guest_edit_info_form_btn_done.Name = "guest_edit_info_form_btn_done";
+            this.guest_edit_info_form_btn_done.Size = new System.Drawing.Size(344, 69);
+            this.guest_edit_info_form_btn_done.TabIndex = 40;
+            this.guest_edit_info_form_btn_done.Text = "Done";
+            this.guest_edit_info_form_btn_done.UseVisualStyleBackColor = false;
+            this.guest_edit_info_form_btn_done.Click += new System.EventHandler(this.guest_edit_info_form_btn_done_Click);
             // 
             // guest_edit_info_form
             // 
@@ -361,5 +381,6 @@
         private System.Windows.Forms.TextBox guest_edit_info_form_textbox_credit_card_field4;
         private System.Windows.Forms.TextBox guest_edit_info_form_textbox_credit_card_field3;
         private System.Windows.Forms.TextBox guest_edit_info_form_textbox_credit_card_field2;
+        private System.Windows.Forms.Button guest_edit_info_form_btn_done;
     }
 }

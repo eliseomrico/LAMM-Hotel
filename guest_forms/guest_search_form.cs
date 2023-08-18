@@ -44,7 +44,7 @@ namespace LAMM_PMS
                 connection.Open();
 
                 // Create and execute an SQL query
-                string sqlQuery = "SELECT * FROM Customer;";
+                string sqlQuery = "SELECT * FROM Customer ORDER BY cust_id";
                 using (NpgsqlCommand command = new NpgsqlCommand(sqlQuery, connection))
                 {
                     using (NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(command))
