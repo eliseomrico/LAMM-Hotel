@@ -94,6 +94,9 @@ namespace LAMM_PMS
         private void main_menu_btn_room_availability_Click(object sender, EventArgs e)
         {
             setButtonColorToSelectedColor((Button)sender);
+            clearMainPanelControls();
+            addFormToMainContentArea(new room_search_form(this));
+            setMainContentAreaVisible(true);
         }
 
         // Guests Form
